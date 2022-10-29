@@ -9,7 +9,7 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        title: const Text("ListView"),
+        title: const Text("CONTACTS"),
       ),
       body: ListView(
         children:  [
@@ -46,9 +46,9 @@ class MainScreen extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: const Text("ANU"),
+              title: const Text("ACHU"),
               //tileColor: Colors.grey,
-              subtitle: const Text("9685742036"),
+              subtitle: const Text("9682582036"),
               trailing: Wrap(
                 children: const [
                   Icon(Icons.sms_sharp,color: Colors.blue),
