@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/login_with_validation.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class _SplashState extends State<Splash> {
     super.initState();
 
     Timer(const Duration(seconds: 2), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => login_with_validation()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Login_with_Validation()));
     });
   }
   @override
@@ -38,11 +38,11 @@ class _SplashState extends State<Splash> {
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+           mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ///fetching image from asset way 1
               Image.asset(
-                "assets/images/1564535_customer_user_userphoto_account_person_icon.png",
+                "assets/images/food.png",
                 height: 200,
                 width: 200,
               ),
