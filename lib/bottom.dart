@@ -1,61 +1,94 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: MyBottomBar(),
-  ));
+  runApp(MaterialApp(home: MyBottomnavbar()));
 }
 
-class MyBottomBar extends StatefulWidget {
+class MyBottomnavbar extends StatefulWidget {
   @override
-  State<MyBottomBar> createState() => _MyBottomBarState();
+  State<MyBottomnavbar> createState() => _MyBottomnavbarState();
 }
 
-class _MyBottomBarState extends State<MyBottomBar> {
-  int selectindex = 0;
-
-  List bodys = const  <Widget>[
-    Card(child: Padding(padding: EdgeInsets.all(50.0), child: Text('Account'),),),
-    Card(child: Padding(padding: EdgeInsets.all(50.0), child: Text('Search'),),),
-    Card(child: Padding(padding: EdgeInsets.all(50.0), child: Text('Favorite'),),),
-    Card(child: Padding(padding: EdgeInsets.all(50.0), child: Text('Home'),),),
+class _MyBottomnavbarState extends State<MyBottomnavbar> {
+  var bodies = <Widget>[
+    // List_With_Builder(),
+    const Card(
+      color: Colors.teal,
+      child: Padding(
+        padding: EdgeInsets.all(50.0),
+        child: Text("HomePage"),
+      ),
+    ),
+    const Card(
+      color: Colors.red,
+      child: Padding(
+        padding: EdgeInsets.all(50.0),
+        child: Text("Search Page"),
+      ),
+    ),
+    const Card(
+      color: Colors.blueAccent,
+      child: Padding(
+        padding: EdgeInsets.all(50.0),
+        child: Text("Favorites Page"),
+      ),
+    ),
+    const Card(
+      color: Colors.purple,
+      child: Padding(
+        padding: EdgeInsets.all(50.0),
+        child: Text("Account Page"),
+      ),
+    )
   ];
 
- void onitemtapped(int index){
+  int selectedindex = 0;
+
+  void onitemtap(int index) {
     setState(() {
-      selectindex = index;
+      selectedindex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BottomBar'),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        unselectedItemColor: Colors.white,
-        selectedItemColor:Colors.yellow ,
-        backgroundColor: Colors.cyan,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle), label: "account",),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.search), label: "Search",),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), label: "favorite"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home), label: "home")
-        ],
-        currentIndex: selectindex,
-        onTap: onitemtapped,
+        title: const Text("BottomBar"),
       ),
       body: Center(
-        child: bodys.elementAt(selectindex),
+        child: bodies.elementAt(selectedindex),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.shifting,
+        selectedItemColor: Colors.pink,
+        unselectedItemColor: Colors.yellow,
+        backgroundColor: Colors.black,
+        currentIndex: selectedindex,
+        onTap: onitemtap,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
+            backgroundColor: Colors.teal,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: "Search",
+            backgroundColor: Colors.orange,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: "Favorites",
+            backgroundColor: Colors.blueAccent,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle),
+            label: "Profile",
+            backgroundColor: Colors.purple,
+          )
+        ],
       ),
     );
   }
 }
-
-
-
