@@ -14,7 +14,8 @@ LISTVIEW_BUILDER _OUTPUT
 
 card_grid_ui
 
-![localhost_63504_ (1)](https://user-images.githubusercontent.com/108115666/199271488-637ce9b1-6840-40da-a963-197044d31d19.png)
+![localhost_63504_](https://user-images.githubusercontent.com/108115666/199271855-e520b40f-92e9-43e9-86bb-368f8d737672.png)
+
 
 
 
