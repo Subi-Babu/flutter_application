@@ -7,3 +7,10 @@ LOGIN PAGE _OUTPUT_
 contact_book_ui_output
 
 ![localhost_54049_](https://user-images.githubusercontent.com/108115666/198844588-0ca2895d-061d-4545-8ddb-695ac3548229.png)
+
+LISTVIEW_BUILDER _OUTPUT
+
+![localhost_50657_](https://user-images.githubusercontent.com/108115666/199189685-7c1cccfc-4504-4e19-9b01-f23f1aee26dc.png)
+
+
+
