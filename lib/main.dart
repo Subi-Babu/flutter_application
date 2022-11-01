@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/login_with_validation.dart';
-
+import 'ListWithSeparated.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primarySwatch: Colors.pink),
@@ -23,7 +23,7 @@ class _SplashState extends State<Splash> {
     super.initState();
 
     Timer(const Duration(seconds: 2), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Login_with_Validation()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => login_with_validation()));
     });
   }
   @override

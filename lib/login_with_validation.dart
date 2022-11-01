@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter_application_1/home.dart';
 
-class Login_with_Validation extends StatelessWidget {
+class login_with_validation extends StatelessWidget {
   var formkey = GlobalKey<FormState>();
 
   @override
