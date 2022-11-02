@@ -34,88 +34,89 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(child: Padding(
         padding: const EdgeInsets.all(10),
         child: GridView(children: [
-          InkWell(
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.brown,),
+          Card(
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.brown,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.home,size: 20,color: Colors.white,),
-              Text("Home",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.home,size: 10,color: Colors.white,),
+              Text("Home",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
-          InkWell(
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.brown,),
+          Card(
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.red,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.notifications,size: 20,color: Colors.white,),
-              Text("Notifications",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.notifications,size: 10,color: Colors.white,),
+              Text("Notifications",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
-          InkWell(
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.purple,),
+          Card(
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.purple,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.facebook,size: 20,color: Colors.white,),
-              Text("Facebook",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.facebook,size: 10,color: Colors.white,),
+              Text("Facebook",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
-         InkWell(             
-           child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.yellow,),
+         Card(             
+           child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.yellow,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.search,size: 20,color: Colors.white,),
-              Text("Search",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.search,size: 10,color: Colors.white,),
+              Text("Search",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
          ),
-         InkWell(
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.pink,),
+        Card(
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.pink,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.phone,size: 20,color: Colors.white,),
-              Text("Phone",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.phone,size: 10,color: Colors.white,),
+              Text("Phone",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
-          InkWell(              
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.green,),
+          Card(              
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.green,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.settings,size: 20,color: Colors.white,),
-              Text("Settings",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.settings,size: 10,color: Colors.white,),
+              Text("Settings",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
-          InkWell(
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.blue,),
+          Card(
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.blue,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.alarm,size: 20,color: Colors.white,),
-              Text("Alaram",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.alarm,size: 10,color: Colors.white,),
+              Text("Alaram",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
-          InkWell(              
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey,),
+          Card(              
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.grey,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Icon(Icons.camera,size: 20,color: Colors.white,),
-              Text("Camera",style: TextStyle(color: Colors.white,fontSize: 20),)
+              Icon(Icons.camera,size: 10,
+              color: Colors.white,),
+              Text("Camera",style: TextStyle(color: Colors.white,fontSize: 10),)
             ],),
             ),
           ),
         ],
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 5,crossAxisSpacing: 5),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),
         ),
       ),),
     );
