@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(10),
         child: GridView(children: [
           Card(
-            child: Container(height: 200,width:200,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.brown,),
+            child: Container(height: 20,width:20,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.brown,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Card(
-            child: Container(height: 200,width:200,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.red,),
+            child: Container(height: 20,width:20,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.red,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Card(
-            child: Container(height: 200,width:200,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.purple,),
+            child: Container(height: 20,width:20,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.purple,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
          Card(             
-           child: Container(height: 200,width:200,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.yellow,),
+           child: Container(height: 20,width:20,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.yellow,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
          ),
         Card(
-            child: Container(height: 200,width:200,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.pink,),
+            child: Container(height: 20,width:20,decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: Colors.pink,),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
