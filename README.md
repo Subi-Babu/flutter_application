@@ -16,6 +16,11 @@ CARD_UI_OUTPUT
 
 ![localhost_63513_](https://user-images.githubusercontent.com/108115666/199467175-51c6e333-a834-4ead-a890-cdf25ec87e69.png)
 
+PROFILE_UI
+
+![localhost_56234_](https://user-images.githubusercontent.com/108115666/200021446-0397b1fc-51e0-44dd-8423-89ce16db4800.png)
+
+
 
 
 
