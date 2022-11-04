@@ -12,6 +12,11 @@ LISTVIEW_BUILDER _OUTPUT
 
 ![localhost_50657_](https://user-images.githubusercontent.com/108115666/199189685-7c1cccfc-4504-4e19-9b01-f23f1aee26dc.png)
 
+CARD_UI_OUTPUT
+
+![localhost_63513_](https://user-images.githubusercontent.com/108115666/199467175-51c6e333-a834-4ead-a890-cdf25ec87e69.png)
+
+
 
 
 
