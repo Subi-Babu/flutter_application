@@ -77,15 +77,15 @@ class profile extends StatelessWidget{
           Text('Writer', style: TextStyle(fontSize: 30,color: Colors.blue )
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center,
-        children: [CircleAvatar(backgroundColor: Colors.red,radius:100 ,
+        children: [CircleAvatar(backgroundColor: Colors.red,radius:50 ,
             child:IconButton(onPressed: (() {
                       }),
-            icon: const Icon(Icons.message),color: Colors.white,iconSize: 100,
+            icon: const Icon(Icons.message),color: Colors.white,iconSize: 50,
           ),),
-         CircleAvatar( backgroundColor: Colors.blue,radius:100 ,
+         CircleAvatar( backgroundColor: Colors.blue,radius:50 ,
           child :IconButton(onPressed: (() {
                       }),
-            icon: const Icon(Icons.add),color: Colors.white,iconSize:100 ,
+            icon: const Icon(Icons.add),color: Colors.white,iconSize:50 ,
           ),),
         ],
        
