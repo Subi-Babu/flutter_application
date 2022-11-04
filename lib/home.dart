@@ -10,8 +10,12 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        title: const Text("CONTACTS"),
-      ),
+        title: Text("Contacts",style: TextStyle(fontSize: 33,fontWeight: FontWeight.bold),),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+        ],
+             ),
       body: ListView(
         children:  [
           const SizedBox(
