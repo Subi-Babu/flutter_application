@@ -20,6 +20,11 @@ PROFILE_UI
 
 ![localhost_56234_](https://user-images.githubusercontent.com/108115666/200021446-0397b1fc-51e0-44dd-8423-89ce16db4800.png)
 
+CHECKBOX_OUTPUT
+
+![localhost_59015_ (1)](https://user-images.githubusercontent.com/108115666/200763814-86251d80-841a-40b5-a1e6-8f049b7cbed6.png)
+
+
 
 
 

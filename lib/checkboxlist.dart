@@ -29,11 +29,13 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
-         title: Text('CheckBox ListTile Demo',),
+        
+        title: Text('CheckBox ListTile Demo',),
           ),
 
       body: Column(
-          children: [
+
+        children: [
        CheckboxListTile(value: android, 
           onChanged: (bool ? val){
             setState((){
