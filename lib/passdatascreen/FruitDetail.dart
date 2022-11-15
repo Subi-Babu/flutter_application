@@ -17,7 +17,7 @@ class SingleProductScreen extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         child: Column(children: [
                 Text(
-            "Name: ${product['name']}",
+            " ${product['name']}",
             style: const TextStyle(fontSize: 30, color: Colors.purple),
           ),
           Text(
