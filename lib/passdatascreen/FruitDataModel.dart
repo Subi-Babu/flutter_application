@@ -1,11 +1,14 @@
+// ignore: file_names
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
-import 'style.dart';
+import 'package:flutter_application_1/passdatascreen/style.dart';
+
 
 class ProductListScreen extends StatelessWidget {
  
 
-  // This function is triggered when the user tap on a product
-  void _goToSingle(context, productId) {
+   void _goToSingle(context, productId) {
     Navigator.of(context).pushNamed("single-product", arguments: productId);
   }
 
@@ -13,7 +16,7 @@ class ProductListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Product List Screen"),
+        title: const Text("FRUITS"),
       ),
       body: ListView(
         padding: const EdgeInsets.all(15),
