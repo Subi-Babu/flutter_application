@@ -20,12 +20,14 @@ class SingleProductScreen extends StatelessWidget {
             " ${product['name']}",
             style: const TextStyle(fontSize: 30, color: Colors.purple),
           ),
+           Text(" ${product['description']}"),
+           
           Text(
             "Price: ${product['price'].toString()}",
             style: const TextStyle(fontSize: 20, color: Colors.red),
           ),
         
-          Text("Description ${product['description']}"),
+         
 
            Image.network(product["image"]),
         ]),
