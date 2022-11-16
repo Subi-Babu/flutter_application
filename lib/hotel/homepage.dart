@@ -1,163 +1,160 @@
-/*import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
 
-class HomeScreen extends StatefulWidget {
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+
+
+class HomeScreen extends StatelessWidget {
  
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+      appBar: AppBar(
+        backgroundColor: Colors.cyan,
+        title:Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children:[ 
+          
+          Row(
             children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              SizedBox(height:50),
+              Text("Type Your Location",
+              style:TextStyle(color: Colors.white,fontSize: 15,),
+              ), ],
+          ),
+                   Row(
                   children: [
-                    const Icon(Icons.menu_rounded, size: 40),
-                    Column(
-                      children: [
-                        Padding(
-                    padding: const EdgeInsets.only(right: 8.0),
-                    child: Icon((Icons.favorite_border_rounded)),
-
-          )
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 10,),
+                        padding: EdgeInsets.symmetric(vertical: 10,horizontal: 5),
+                      decoration:BoxDecoration(color: Colors.grey,
+                      borderRadius:BorderRadius.circular(15) ,
+                      ),
+                     child:InkWell(
+                      onTap: (() {
+                        
+                      }),
+                      child:Row(
+                        children:[
+                    Icon(Icons.search),
+                  Text("Tokyo,Japan"),
                       ],
+                      ),
+                     ),
                     ),
-                  ],
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
-                child: Text(
-                  "Type your location!!",
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Color(0xff3C4657)),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 35, vertical: 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    ),
+                   
+                       ],
+        ),
+                     
+          ],
+          ),
+         
+      actions: [
+        Icon(Icons.favorite,color: Colors.white,size: 25,),
+        Icon(Icons.menu,color: Colors.white,size:25,)
+      ],
+      ),
+      body: SingleChildScrollView(
+         child: Padding(
+           padding: const EdgeInsets.symmetric(horizontal: 10),
+           child: Column(
+            children:[
+       
+           SizedBox(height:20) ,
+          // ignore: sized_box_for_whitespace
+          Container(
+            height: 100,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+              itemCount: listss.length,
+              itemBuilder: (context, index) {
+                return Column(
                   children: [
                     Container(
-                      width: 300,
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Tokyo,Japan",
-                          prefixIcon: const Icon(
-                            Icons.search,
-                            size: 35,
-                            color: Color(0xff3C4657),
-                          ),
-                          border: OutlineInputBorder(
-                            borderSide: const BorderSide(
-                                width: 2.4, color: Color(0xff3C4657)),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(
-                                width: 2.4, color: Color(0xff3C4657)),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
+                      padding: EdgeInsets.all(15),
+                      margin: EdgeInsets.only(top: 5,bottom: 2,right: 5,left: 8),
+                    height: 70,
+                    width: 70,
+                    color: Colors.red,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+
+                    ),
+                    child: Image.asset(listss[index].img),
                         ),
-                      ),
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff3C4657),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      height: 50,
-                      width: 50,
-                      child: const Icon(Icons.filter_alt,
-                          size: 35, color: Colors.white),
-                    ),
+                      
+                      Text(listss[index].title),
                   ],
+                );
+              }),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 15),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10)
+            ),
+            child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children:[
+              Container(
+                height: 200,
+                margin: EdgeInsets.only(bottom: 5),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft:Radius.circular(10) ,
+                    topRight:Radius.circular(10) ),
+                  image: DecorationImage(image: NetworkImage("https://www.vgchartz.com/articles_media/images/tokyo-disneyland-gets-kingdom-hearts-themed-hotel-rooms-4.png"),
+                  fit: BoxFit.cover
+                  ),
+
                 ),
-              ),
-              const SizedBox(
-                height: 20,
               ),
              
-              // SizedBox(
-              //   height: 15,
-              // ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-                height: 270,
-                width: double.infinity,
-                      child: InkWell(
-                      onTap: () {
-                                },
-                      child: Container(
-                        decoration: BoxDecoration(
-                           borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(10),
-                                  topLeft: Radius.circular(10)),
-                          image: DecorationImage(
-                              image:NetworkImage("https://www.vgchartz.com/articles_media/images/tokyo-disneyland-gets-kingdom-hearts-themed-hotel-rooms-4.png"),
-                              fit: BoxFit.fill
-                              ),
-                        ),
-                        child: Stack(children: [
-                          Positioned(
-                            bottom: 10,
-                            left: 10,
-                            child: Column(
-                              
-                              children: [
-                                Text("\$40" ,  
-                                     style: const TextStyle(
-                                      fontSize: 22,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                const SizedBox(height: 8),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Row(
-                                    children: [
-                                        Text("Awesome room near Tokyo",
-                                        style: const TextStyle(
-                                            fontSize: 22, color: Colors.black),   ),
-                                            Text('Tokyo, Japan', style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold),),
-                                            
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          )
-                        ]),
-                      )
-                      ),
-                    
-                  
-              
-              ),
-        
-              
-              
-              ],
-          ),
+              Text("Awesome room near Tokyo!!"),
+              Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Icon(Icons.star,color: Colors.deepOrangeAccent,),
+               Text("5",style: TextStyle(color: Colors.deepOrangeAccent),),
+               Text("(250 reviews)"),
+               Spacer(),
+               Text("\$25")
+                ],
+
+              )
+            ],
+            ),
+          )
+            ],
+           ),
+                     
         ),
-      ),
-    );
-  }
-}*/
+         ),    
+   
+    
+    
+       );
+           
+  } 
+}
+
+// ignore: camel_case_types
+class items
+{
+ String img;
+ String title;
+   items({
+  required this.img,
+  required this.title
+  });
+}  
+List<items> listss = [
+  items(img: "asstes/images/bed.png", title: "Hotel"),
+  items(img: "asstes/images/restaurant.png", title: "Restaurant"),
+  items(img: "asstes/images/coffee-cup.png", title: "Cafe"),  
+
+];
