@@ -24,6 +24,9 @@ CHECKBOX_OUTPUT
 
 ![localhost_59015_ (1)](https://user-images.githubusercontent.com/108115666/200763814-86251d80-841a-40b5-a1e6-8f049b7cbed6.png)
 
+GRADIENTS__OUTPUT
+
+
 
 
 
