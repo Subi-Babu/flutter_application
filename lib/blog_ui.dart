@@ -1,10 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
+  runApp(MaterialApp(   
     home: BlogHomeOnePage(),
   ));
 }
@@ -52,9 +50,12 @@ final List<Map> articles = [
 ];
 
 class BlogHomeOnePage extends StatelessWidget {
+  
   final Color primaryColor = const Color(0xfED22192);
   final Color bgColor = const Color(0xffa9E0E3);
   final Color secondaryColor = const Color(0xff324558);
+
+  const BlogHomeOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {

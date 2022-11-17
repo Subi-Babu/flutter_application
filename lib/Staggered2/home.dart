@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
 
-class StaggeredAssign extends StatelessWidget {
+class Staggeredview extends StatelessWidget {
  
 
   @override
@@ -15,37 +15,32 @@ class StaggeredAssign extends StatelessWidget {
       StaggeredTile.count(1, 1.3),
     ];
 
-    List<Tile> _tiles = const [
-      Tile(
+    List<stag> _tiles = const [
+      stag(
           url:
-              'https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-          title: 'Wallpaper',
-          subtitle: 'Wallpaper'),
-      Tile(
+              'https://images.pexels.com/photos/257352/pexels-photo-257352.jpeg?auto=compress&cs=tinysrgb&w=600',
+          title: 'Rocks Formation',
+          subtitle: 'Kelly'),
+      stag(
           url:
               'https://images.unsplash.com/photo-1512850183-6d7990f42385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-          title: 'Wallpaper',
-          subtitle: 'Wallpaper'),
-      Tile(
+          title: 'Besides Trees and houses',
+          subtitle: 'Carl Sagar'),
+      stag(
           url:
-              'https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-          title: 'Wallpaper',
-          subtitle: 'Wallpaper'),
-      Tile(
+              'https://images.pexels.com/photos/3813491/pexels-photo-3813491.jpeg?cs=srgb&dl=pexels-lisa-fotios-3813491.jpg&fm=jpg&_gl=1*if480k*_ga*NjkyODEwNTA3LjE2Njg2MDc4Mjg.*_ga_8JE65Q40S6*MTY2ODY3MDc1My4zLjEuMTY2ODY3MDg2NC4wLjAuMA..',
+          title: 'man in greenjacket walkingon sidewalk',
+          subtitle: 'Nichole'),
+     stag(
           url:
-              'https://images.unsplash.com/photo-1619639572420-e0eac8689c29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-          title: 'Wallpaper',
-          subtitle: 'Wallpaper'),
-      Tile(
-          url:
-              'https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-          title: 'Wallpaper',
-          subtitle: 'Wallpaper')
-    ];
+              'https://images.pexels.com/photos/13336772/pexels-photo-13336772.jpeg?cs=srgb&dl=pexels-maria-loznevaya-13336772.jpg&fm=jpg&_gl=1*12nuerm*_ga*NjkyODEwNTA3LjE2Njg2MDc4Mjg.*_ga_8JE65Q40S6*MTY2ODY3MDc1My4zLjAuMTY2ODY3MDc1My4wLjAuMA..',
+          title: 'Nature Beauty',
+          subtitle: 'Maria Losenvaya'),
+          ];
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Staggered Assignment'),
+        title: const Text('Staggered '),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -61,11 +56,11 @@ class StaggeredAssign extends StatelessWidget {
   }
 }
 
-class Tile extends StatelessWidget {
+class stag extends StatelessWidget {
   final String url;
   final String title;
   final String subtitle;
-  const Tile({
+  const stag({
     Key? key,
     required this.url,
     required this.title,
@@ -77,7 +72,7 @@ class Tile extends StatelessWidget {
         color: Colors.grey[300],
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          //mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
             Image.network(url),
             const SizedBox(
