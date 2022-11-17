@@ -12,10 +12,10 @@ class Staggeredview extends StatelessWidget {
       StaggeredTile.count(1, 2),
       StaggeredTile.count(1, 1.3),
       StaggeredTile.count(1, 2),
-      StaggeredTile.count(1, 1.3),
+     
     ];
 
-    List<stag> _tiles = const [
+    List<stag> tiles = const [
       stag(
           url:
               'https://images.pexels.com/photos/257352/pexels-photo-257352.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -49,7 +49,7 @@ class Staggeredview extends StatelessWidget {
           crossAxisSpacing: 6,
           crossAxisCount: 2,
           staggeredTiles: _staggeredStyle,
-          children: _tiles,
+          children: tiles,
         ),
       ),
     );
