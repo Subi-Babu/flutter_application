@@ -13,40 +13,32 @@ final List<Map> articles = [
     "time": "4 min read",
   },
   {
-    "title": "Does Dry is January Actually Improve Your Health?",
-    "author": "Jonhy Vino",
-    "time": "4 min read",
+    "title": "Think About Why You Want?",
+    "author": "Arun Thomas",
+    "time": "5  min read",
   },
   {
-    "title": "You do hire a designer to make something. You hire them.",
-    "author": "Jonhy Vino",
-    "time": "4 min read",
+    "title": "Identify Strong Branding Opportunities.",
+    "author": "Niche J",
+    "time": "10 min read",
+  },
+  
+  {
+    "title": "Journaled Journeys",
+    "author": "Kelly Martin",
+    "time": "6 min read",
   },
   {
-    "title": "How to Seem Like You Always Have Your Shot Together",
-    "author": "Jonhy Vino",
+    "title": "Take a Break and Try Something New?",
+    "author": "John Louis",
+    "time": "7 min read",
+  },
+    {
+    "title": "The Millennial Money Man",
+    "author": "Cathrine Martt",
     "time": "4 min read",
   },
-  {
-    "title": "How to Seem Like You Always Have Your Shot Together",
-    "author": "Jonhy Vino",
-    "time": "4 min read",
-  },
-  {
-    "title": "Does Dry is January Actually Improve Your Health?",
-    "author": "Jonhy Vino",
-    "time": "4 min read",
-  },
-  {
-    "title": "You do hire a designer to make something. You hire them.",
-    "author": "Jonhy Vino",
-    "time": "4 min read",
-  },
-  {
-    "title": "How to Seem Like You Always Have Your Shot Together",
-    "author": "Jonhy Vino",
-    "time": "4 min read",
-  },
+  
 ];
 
 class BlogHomeOnePage extends StatelessWidget {
@@ -141,10 +133,10 @@ class BlogHomeOnePage extends StatelessWidget {
                 separatorBuilder: (context, index) =>
                     const SizedBox(height: 16.0),
               ),
-              const Text("Tab 2"),
-              const Text("Tab 3"),
-              const Text("Tab 4"),
-              const Text("Tab 5"),
+              const Text("DESIGNSS"),
+              const Text("BEAUTYSS"),
+              const Text("EDUCATION"),
+              const Text("ENTERTAINMENT"),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
@@ -200,7 +192,7 @@ class BlogHomeOnePage extends StatelessWidget {
                   color: Colors.blue,
                   width: 80.0,
                   child: const Image(
-                   image: NetworkImage("https://static.vecteezy.com/system/resources/previews/000/201/215/original/vector-beach-vacations-background.jpg",
+                   image: NetworkImage("https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg?cs=srgb&dl=pexels-max-andrey-1366630.jpg&fm=jpg&_gl=1*w396ic*_ga*NjkyODEwNTA3LjE2Njg2MDc4Mjg.*_ga_8JE65Q40S6*MTY2ODcwNDM2Mi40LjEuMTY2ODcwNDQyMy4wLjAuMA..",
                    ),fit: BoxFit.cover,
                   ),
                 ),
