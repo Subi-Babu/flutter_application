@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                     topLeft:Radius.circular(10) ,
                     topRight:Radius.circular(10) ),
-                  image: DecorationImage(image: NetworkImage("https://www.vgchartz.com/articles_media/images/tokyo-disneyland-gets-kingdom-hearts-themed-hotel-rooms-4.png"),
+                  image: DecorationImage(image: NetworkImage("https://www.pexels.com/photo/black-and-grey-bedspread-on-bed-and-pillow-164595/"),
                   fit: BoxFit.cover
                   ),
 
