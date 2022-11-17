@@ -28,6 +28,11 @@ GRADIENTS__OUTPUT
 
 ![localhost_56283_](https://user-images.githubusercontent.com/108115666/202367448-dd4846da-4ecd-4738-b88f-3abb8c7adefd.png)
 
+BLOG_UI __OUTPUT
+
+![localhost_51699_ (1)](https://user-images.githubusercontent.com/108115666/202515509-8b860b65-295f-408e-b21f-8752d7e8e6f8.png)
+
+
 
 
 
