@@ -5,12 +5,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 void main(){
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: ProfileUi(),
+    home: Profile(),
   ));
 }
 
-class ProfileUi extends StatelessWidget {
-  const ProfileUi({Key? key}) : super(key: key);
+class Profile extends StatelessWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class ProfileUi extends StatelessWidget {
                 color: Colors.black,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/7/7e/Virat_Kohli.jpg"),
+                  image: NetworkImage("https://images.pexels.com/photos/7063767/pexels-photo-7063767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
                 ),
                 borderRadius: BorderRadius.circular(100.0),
               ),
@@ -93,7 +93,7 @@ class ProfileUi extends StatelessWidget {
               child: Column(
                 children: const [
                   Text(
-                    'chromicle',
+                    'Writer',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   Text(
@@ -114,7 +114,7 @@ class ProfileUi extends StatelessWidget {
                   Row(
                     children: const [
                       Text(
-                        'Mobile App Developer And Open',
+                        'Mobile App Developer',
                         style: TextStyle(
                             fontSize: 23, fontWeight: FontWeight.w500),
                       )
