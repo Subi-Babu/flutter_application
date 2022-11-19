@@ -124,7 +124,7 @@ class Profile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
                       Text(
-                        'Source Enthusisastic',
+                        'Open Source Enthusisastic',
                         style: TextStyle(
                             fontSize: 23, fontWeight: FontWeight.w500),
                       )
