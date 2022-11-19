@@ -1,160 +1,256 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:ui';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
-class HomeScreen extends StatelessWidget {
- 
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  // * DATA
+  List buttons = [
+    [
+      const Icon(
+        CupertinoIcons.bed_double_fill,
+        color: Colors.white,
+        size: 26,
+      ),
+      'Hotel',
+      Colors.pink
+    ],
+    [
+      const Icon(
+        Icons.restaurant_rounded,
+        color: Colors.white,
+        size: 26,
+      ),
+      'Restaurant',
+      Colors.blue
+    ],
+    [
+      const Icon(
+        Icons.coffee_rounded,
+        color: Colors.white,
+        size: 26,
+      ),
+      'Cafe',
+      Colors.orange
+    ],
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
-        title:Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children:[ 
-          
-          Row(
+        elevation: 0,
+        backgroundColor: Colors.blue,
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.favorite_border))
+        ],
+        bottom: PreferredSize(
+          preferredSize: const Size(double.infinity, 100),
+          child: Column(
             children: [
-              SizedBox(height:50),
-              Text("Type Your Location",
-              style:TextStyle(color: Colors.white,fontSize: 15,),
-              ), ],
-          ),
-                   Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.symmetric(vertical: 10,),
-                        padding: EdgeInsets.symmetric(vertical: 10,horizontal: 5),
-                      decoration:BoxDecoration(color: Colors.grey,
-                      borderRadius:BorderRadius.circular(15) ,
-                      ),
-                     child:InkWell(
-                      onTap: (() {
-                        
-                      }),
-                      child:Row(
-                        children:[
-                    Icon(Icons.search),
-                  Text("Tokyo,Japan"),
-                      ],
-                      ),
-                     ),
-                    ),
-                    ),
-                   
-                       ],
-        ),
-                     
-          ],
-          ),
-         
-      actions: [
-        Icon(Icons.favorite,color: Colors.white,size: 25,),
-        Icon(Icons.menu,color: Colors.white,size:25,)
-      ],
-      ),
-      body: SingleChildScrollView(
-         child: Padding(
-           padding: const EdgeInsets.symmetric(horizontal: 10),
-           child: Column(
-            children:[
-       
-           SizedBox(height:20) ,
-          // ignore: sized_box_for_whitespace
-          Container(
-            height: 100,
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-              itemCount: listss.length,
-              itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(15),
-                      margin: EdgeInsets.only(top: 5,bottom: 2,right: 5,left: 8),
-                    height: 70,
-                    width: 70,
-                    color: Colors.red,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-
-                    ),
-                    child: Image.asset(listss[index].img),
-                        ),
-                      
-                      Text(listss[index].title),
-                  ],
-                );
-              }),
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 15),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10)
-            ),
-            child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children:[
-              Container(
-                height: 200,
-                margin: EdgeInsets.only(bottom: 5),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft:Radius.circular(10) ,
-                    topRight:Radius.circular(10) ),
-                  image: DecorationImage(image: NetworkImage("https://www.pexels.com/photo/black-and-grey-bedspread-on-bed-and-pillow-164595/"),
-                  fit: BoxFit.cover
-                  ),
-
-                ),
+              const Text(
+                'Type your location',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 22),
               ),
-             
-              Text("Awesome room near Tokyo!!"),
-              Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  Icon(Icons.star,color: Colors.deepOrangeAccent,),
-               Text("5",style: TextStyle(color: Colors.deepOrangeAccent),),
-               Text("(250 reviews)"),
-               Spacer(),
-               Text("\$25")
-                ],
-
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 30.0, right: 30.0, top: 15, bottom: 20),
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(40),
+                      color: Colors.white),
+                  child: TextField(
+                    maxLines: 1,
+                    decoration: InputDecoration(
+                        focusedBorder: const OutlineInputBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(40.0)),
+                            borderSide: BorderSide(color: Colors.blueGrey)),
+                        hintText: 'Tokyo',
+                        prefixIcon: const Icon(Icons.search_rounded),
+                        border: OutlineInputBorder(
+                            borderSide: const BorderSide(color: Colors.white),
+                            borderRadius: BorderRadius.circular(40))),
+                  ),
+                ),
               )
             ],
-            ),
-          )
-            ],
-           ),
-                     
+          ),
         ),
-         ),    
-   
-    
-    
-       );
-           
-  } 
+      ),
+      drawer: Drawer(
+        backgroundColor: Colors.blue[50],
+        elevation: 0,
+      ),
+      body: Column(
+        children: [CategoryButtons(buttons: buttons), const HotelCard()],
+      ),
+    );
+  }
 }
 
-// ignore: camel_case_types
-class items
-{
- String img;
- String title;
-   items({
-  required this.img,
-  required this.title
-  });
-}  
-List<items> listss = [
-  items(img: "asstes/images/bed.png", title: "Hotel"),
-  items(img: "asstes/images/restaurant.png", title: "Restaurant"),
-  items(img: "asstes/images/coffee-cup.png", title: "Cafe"),  
+class HotelCard extends StatelessWidget {
+  const HotelCard({
+    Key? key,
+  }) : super(key: key);
 
-];
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
+      child: Card(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: SizedBox(
+          height: 350,
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        topRight: Radius.circular(10)),
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                            'https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'))),
+                child: Stack(children: [
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.star_border_rounded,
+                          color: Colors.white,
+                        )),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 40,
+                          width: 60,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(5)),
+                          child: const Center(
+                              child: Text(
+                            '\$40',
+                            style: TextStyle(fontSize: 16),
+                          )),
+                        ),
+                      )),
+                ]),
+              ),
+              Container(
+                width: double.infinity,
+                height: 150,
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    const Text(
+                      'Room in Tokyo',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                    const Text(
+                      'Tokyo, Japan',
+                      style: TextStyle(fontSize: 17),
+                    ),
+                    Row(
+                      children: const [
+                        Icon(
+                          Icons.star_rounded,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star_rounded,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star_rounded,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star_rounded,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star_half_rounded,
+                          color: Colors.green,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text('(220 reviews)')
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CategoryButtons extends StatelessWidget {
+  const CategoryButtons({
+    Key? key,
+    required this.buttons,
+  }) : super(key: key);
+
+  final List buttons;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding:
+          const EdgeInsets.only(top: 20.0, left: 25, right: 25, bottom: 10),
+      child: GridView.builder(
+        padding: EdgeInsets.zero,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: buttons.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3, mainAxisExtent: 95, crossAxisSpacing: 10),
+        itemBuilder: (context, index) {
+          return Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: buttons[index][2]),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                buttons[index][0],
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  buttons[index][1],
+                  style: const TextStyle(color: Colors.white, fontSize: 17),
+                )
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
+}

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
 
+
+
 class Staggeredview extends StatelessWidget {
- 
+  const Staggeredview({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +16,7 @@ class Staggeredview extends StatelessWidget {
       StaggeredTile.count(1, 2),
       StaggeredTile.count(1, 1.3),
       StaggeredTile.count(1, 2),
-     
+      StaggeredTile.count(1, 1.3),
     ];
 
     List<stag> tiles = const [
