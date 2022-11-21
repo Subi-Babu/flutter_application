@@ -132,7 +132,7 @@ class Farmer extends StatefulWidget{
                     const SizedBox(
                       height: 10,
                     ),
-                     Image.network("https://images.pexels.com/photos/5677794/pexels-photo-5677794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+                     Image.network("https://images.pexels.com/photos/1656666/pexels-photo-1656666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
                      const SizedBox(
                       height: 10,
                      ),
