@@ -44,6 +44,11 @@ Date_Time_Picker
 
 ![localhost_58671_](https://user-images.githubusercontent.com/108115666/203233658-8e220f80-3486-49ca-aba9-d7d97c0cc464.png)
 
+Auth_UI_Animated Switcher
+
+![localhost_61225_](https://user-images.githubusercontent.com/108115666/203572116-7b77f7f8-800c-41e0-86ea-0ce75452164b.png)
+
+
 
 
 
