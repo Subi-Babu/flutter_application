@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             // Load a Lottie file from your assets
-            Lottie.asset('assets/animmm/success.json',width: 100,height: 100),
+            Lottie.asset('assets/animm/success.json',width: 100,height: 100),
 
             // Load a Lottie file from a remote url
             Lottie.network(
