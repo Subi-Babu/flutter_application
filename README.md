@@ -36,6 +36,10 @@ Hotelroom_ui
 
 ![localhost_51758_](https://user-images.githubusercontent.com/108115666/202839976-c8141985-f604-410b-a82a-85842b99f7ac.png)
 
+Hotel_details
+
+![localhost_63814_](https://user-images.githubusercontent.com/108115666/203920260-3799e72e-6df8-4624-b9d4-18dbd50784d8.png)
+
 Farmer_fresh_ui
 
 ![localhost_59814_](https://user-images.githubusercontent.com/108115666/202975877-1276addd-8aa2-44f1-b27a-358c956d3a52.png)
@@ -43,6 +47,11 @@ Farmer_fresh_ui
 Date_Time_Picker
 
 ![localhost_58671_](https://user-images.githubusercontent.com/108115666/203233658-8e220f80-3486-49ca-aba9-d7d97c0cc464.png)
+
+Auth_UI_Animated Switcher
+
+![localhost_61225_](https://user-images.githubusercontent.com/108115666/203572116-7b77f7f8-800c-41e0-86ea-0ce75452164b.png)
+
 
 
 
