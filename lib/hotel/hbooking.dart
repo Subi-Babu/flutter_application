@@ -17,28 +17,28 @@ class Hotel {
 
 final List<Hotel> hotels = [
   Hotel(
-    imageUrl: 'assets/images/liv.jpeg',
-    title: 'Crown Plazza',
-    description: 'A Five Star Hotel in Kochi',
-    price: 180,
+    imageUrl: 'assets/images/liv.jpg',
+    title: 'LIv',
+    description: 'A Five Star Hotel in Thailand',
+    price: 200,
     rating: 4.5,
   ),
   Hotel(
     imageUrl: 'assets/images/room2.jpg',
-    title: 'Hotel Merriot',
-    description: 'A five star Hotelin Kochi',
+    title: 'Hilton Hua HIn ',
+    description: 'A five star Hotel in Thailand',
     price: 180,
-    rating: 4.5,
+    rating: 5,
   ),
   Hotel(
     imageUrl: 'assets/images/room3.jpg',
-    title: 'HolyDayIn',
-    description: 'A five Star hotel in Kochi',
-    price: 180,
-    rating: 4.5,
+    title: 'Amari Waterbage,Bangkok',
+    description: 'A five Star hotel in Bangkok',
+    price: 190,
+    rating: 3.5,
   ),
   Hotel(
-    imageUrl: 'assets/images/room4.jpg',
+    imageUrl: 'assets/images/room2.jpeg',
     title: 'Marriot',
     description: 'A Five star hotel in Thailand',
     price: 180,
@@ -83,7 +83,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const <Widget>[
                     Text(
-                      'Hello @rjun',
+                      'Hello @SUBI',
                       style: TextStyle(
                           fontSize: 16.0,
                           color: Colors.grey,
@@ -104,7 +104,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                     borderRadius: BorderRadius.circular(10.0),
                     image: const DecorationImage(
                       image: NetworkImage(
-                          'https://cdn.pixabay.com/photo/2015/05/18/23/53/norway-772991__340.jpg'),
+                          'https://t3.ftcdn.net/jpg/03/41/52/70/240_F_341527061_N39UNqSXBGJ5Ozv5AlzoNxpBaUZ7Svzf.jpg'),
                       fit: BoxFit.cover,
                     ),
                     boxShadow: const [
@@ -119,7 +119,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
             ),
           ),
           const SizedBox(height: 10.0),
-          //window for search
+        
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Container(
@@ -277,7 +277,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                   style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),
                 ),
                 Text(
-                  'view all',
+                  'View all',
                   style: TextStyle(fontSize: 18.0, color: Colors.blue),
                 )
               ],
@@ -405,8 +405,7 @@ _hotelPackage(int index) {
             bottom: 40,
             left: 300,
             child: Center(
-              // child: Transform.rotate(
-              //  angle: pi / -1,
+             
               child: Container(
                 height: 50,
                 width: 100,
@@ -434,7 +433,7 @@ _hotelPackage(int index) {
               ),
             ),
           ),
-          // )
+          
         ],
       ),
     ),
